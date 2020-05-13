@@ -1,0 +1,23 @@
+$myColor : #6D9C75;
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    background-color: white;
+    height: 40px;
+    svg {
+        width: auto;
+        height: 30px;
+        margin-top: 5px;
+        float: right;
+        margin-left: 30px;
+        path {
+            fill: $myColor;
+        }
+    }
+    .contact {
+        float: left;
+        margin-left: 0;
+    }
+   
+}

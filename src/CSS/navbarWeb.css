@@ -1,0 +1,17 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 80%;
+  background-color: white;
+  height: 40px; }
+  .navbar svg {
+    width: auto;
+    height: 30px;
+    margin-top: 5px;
+    float: right;
+    margin-left: 30px; }
+    .navbar svg path {
+      fill: #6D9C75; }
+  .navbar .contact {
+    float: left;
+    margin-left: 0; }
