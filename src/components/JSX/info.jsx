@@ -2,7 +2,7 @@ import React from 'react'
 
 import "../../CSS/infoWeb.css"
 import Learn  from "./learn"
-import Profile from "../../Images/Asset 2.png"
+import Profile from "../../Images/ProfileIMG.png"
 
 
 export class Info extends React.Component {

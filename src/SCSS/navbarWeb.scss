@@ -21,3 +21,23 @@ $myColor : #6D9C75;
     }
    
 }
+
+@media (max-width: 576px) {
+    .navbar {
+        top: 650px;
+        border-radius: 10px;
+        background-color: $myColor;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0px 20px;
+        box-sizing: border-box;
+        svg {
+            height: 25px;
+            margin-top: 7.5px;
+            path {
+                fill: white;
+            }
+        }
+    }
+}

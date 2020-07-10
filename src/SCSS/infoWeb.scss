@@ -15,6 +15,7 @@ $breakPoint-phone : 576px;
         width: 400px;
         height: 100%;
         background-color: transparent;
+        margin-top: 0;
         h2 {
             position: relative;
             text-align: left;
@@ -58,23 +59,23 @@ $breakPoint-phone : 576px;
         }
     }
     .picture {
-        width: 400px;
+        width: 300px;
         height: 100%;
         background-color: transparent;
         .profileImg {
-            width: 200px;
+            width: 300px;
             padding: 0;
-            height: 200px;
+            height: 300px;
             background-color: black;
             border-radius: 100%;
             margin: 0px auto;
             box-sizing: border-box;
             overflow: hidden;
-            margin-top: 80px;
+            margin-top: 10px;
             border: 5px solid white;
             box-shadow: $myColor 10px 10px;
             img {
-                width: 200px;
+                width: 300px;
                 padding: 0;
                 margin: 0;
                 height: auto;
@@ -97,6 +98,16 @@ $breakPoint-phone : 576px;
               }
           }
       }
+      .picture {
+          .profileImg {
+              width: 200px;
+              height: 200px;
+              img {
+                  width: 200px;
+                  height: auto;
+              }
+          }
+      }
   }
 }
 
@@ -108,9 +119,9 @@ $breakPoint-phone : 576px;
         flex-wrap: wrap;
         justify-content: space-around;
         flex-direction: column-reverse;
-        margin-top: 50px;
+        margin-top: 0;
         width: 100%;
-        height: calc(100% - 100px);
+        height: 100%;
         margin-bottom: 50px;
         background-color: transparent;
         .text {
@@ -161,13 +172,13 @@ $breakPoint-phone : 576px;
             height: 20%;
             background-color: transparent;
             .profileImg {
-                width: 100px;
-                height: 100px;
+                width: 150px;
+                height: 150px;
                 margin-top: 0px;
                 box-shadow: $myColor 5px 5px;
                 img {
-                    width: 100px;
-                    height: 100px;
+                    width: 150px;
+                    
                 }
             }
         }

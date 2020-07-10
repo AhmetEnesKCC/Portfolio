@@ -11,7 +11,8 @@
   .info .text {
     width: 400px;
     height: 100%;
-    background-color: transparent; }
+    background-color: transparent;
+    margin-top: 0; }
     .info .text h2 {
       position: relative;
       text-align: left;
@@ -45,23 +46,23 @@
       .info .text p span {
         color: #6D9C75; }
   .info .picture {
-    width: 400px;
+    width: 300px;
     height: 100%;
     background-color: transparent; }
     .info .picture .profileImg {
-      width: 200px;
+      width: 300px;
       padding: 0;
-      height: 200px;
+      height: 300px;
       background-color: black;
       border-radius: 100%;
       margin: 0px auto;
       box-sizing: border-box;
       overflow: hidden;
-      margin-top: 80px;
+      margin-top: 10px;
       border: 5px solid white;
       box-shadow: #6D9C75 10px 10px; }
       .info .picture .profileImg img {
-        width: 200px;
+        width: 300px;
         padding: 0;
         margin: 0;
         height: auto; }
@@ -72,7 +73,13 @@
     .info .text .list div p {
       margin: 0; }
     .info .text .list div img {
-      margin: 0; } }
+      margin: 0; }
+  .info .picture .profileImg {
+    width: 200px;
+    height: 200px; }
+    .info .picture .profileImg img {
+      width: 200px;
+      height: auto; } }
 
 @media (max-width: 576px) {
   .info {
@@ -80,9 +87,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column-reverse;
-    margin-top: 50px;
+    margin-top: 0;
     width: 100%;
-    height: calc(100% - 100px);
+    height: 100%;
     margin-bottom: 50px;
     background-color: transparent; }
     .info .text {
@@ -123,10 +130,9 @@
       height: 20%;
       background-color: transparent; }
       .info .picture .profileImg {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         margin-top: 0px;
         box-shadow: #6D9C75 5px 5px; }
         .info .picture .profileImg img {
-          width: 100px;
-          height: 100px; } }
+          width: 150px; } }
