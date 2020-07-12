@@ -1,0 +1,153 @@
+$themeColorDark: #192436;
+$themeColorLight: #eaf2f2;
+body {
+  background-color: $themeColorLight;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.loadingScreen {
+  width: 100%;
+  height: 100vh;
+  background-color: $themeColorLight;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loadingContainer {
+    width: 100px;
+    height: 100px;
+    img {
+      animation: rotateLoading 3s infinite ease-out;
+    }
+  }
+}
+@keyframes rotateLoading {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.socialBarContainer {
+  float: left;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  a {
+    .socialLink {
+      background-repeat: no-repeat;
+      width: 50%;
+      height: 60%;
+    }
+    width: 50%;
+    height: 10vh;
+  }
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  img {
+    transform: scale(2);
+    &:hover {
+      cursor: pointer;
+      filter: invert(0.7);
+    }
+  }
+}
+.middleContainer {
+  float: left;
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  .middleLogos {
+    position: relative;
+    svg {
+      &:nth-child(1) {
+        position: absolute;
+        width: 100px;
+        left: 50%;
+        top: 0;
+        cursor: pointer;
+      }
+      &:nth-child(2) {
+        position: absolute;
+        top: 25%;
+      }
+    }
+    width: 40%;
+    min-width: 90px;
+    height: 100vh;
+  }
+}
+
+.menuContainer {
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  float: left;
+}
+
+.menuLinkContainer {
+  padding: 10px;
+  margin: 0;
+  width: 25%;
+  height: 5vh;
+}
+#goz_1,
+#goz_2 {
+  display: block;
+}
+
+.handLeftContainer,
+.handRightContainer {
+  float: left;
+  width: 30%;
+  height: 70vh;
+  position: relative;
+  img {
+    &:hover {
+      cursor: auto;
+      filter: none;
+    }
+    position: absolute;
+    width: 100%;
+    transform: rotateY(180deg);
+  }
+}
+.handRightContainer {
+  img {
+    transform: none;
+  }
+}
+
+#lampColor {
+  transition: 0.5s;
+}
+
+// @keyframes drawing {
+//   0% {
+//     background-image: url("../../components/SVG/Home_1.svg");
+//   }
+//   50% {
+//     background-image: url("../../components/SVG/Home_2.svg");
+//   }
+//   100% {
+//     background-image: url("../../components/SVG/Home_3.svg");
+//   }
+// }
