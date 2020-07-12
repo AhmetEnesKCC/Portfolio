@@ -32,8 +32,26 @@ export default function Menu(props) {
   });
   return (
     <div className="menuContainer">
-      <img src={home} className="menuLinkContainer" id="Home" alt="" />
-      <img src={aboutMe} className="menuLinkContainer" id="About" alt="" />
+      <img
+        src={home}
+        className="menuLinkContainer"
+        id="Home"
+        onClick={() => {
+          document.getElementById("man").style.width = "100%";
+          document.getElementById("man").style.left = "0%";
+        }}
+        alt=""
+      />
+      <img
+        onClick={() => {
+          document.getElementById("man").style.width = "50%";
+          document.getElementById("man").style.left = "50%";
+        }}
+        src={aboutMe}
+        className="menuLinkContainer"
+        id="About"
+        alt=""
+      />
       <img src={contact} className="menuLinkContainer" id="Contact" alt="" />
     </div>
   );
